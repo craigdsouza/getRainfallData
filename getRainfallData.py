@@ -70,5 +70,5 @@ for state in all_states_list:
 
     df = pd.read_html(str(aws_table),header=0)[0]       # Give the HTML table to pandas to put in a dataframe object
 
-    df.to_csv("PATH_TO_DATA/ARG_%s_%s.csv" % (state,datefstr), encoding='utf-8', index=False)    # Save df as csv file
+    df.to_csv("data/AWS_%s_%s.csv" % (state,datefstr), encoding='utf-8', index=False)    # Save df as csv file
 
