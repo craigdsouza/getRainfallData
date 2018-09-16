@@ -8,7 +8,7 @@ import time
 import random
 
 # Download chromedriver for your OS from here http://chromedriver.storage.googleapis.com/index.html?path=2.41/
-path_to_chromedriver = 'chromedriver_win32/chromedriver.exe' #  change this path as needed
+path_to_chromedriver = 'chromedriver_win32/chromedriver.exe' #  change this path as needed 
 
 # Open IMD website
 browser = webdriver.Chrome(executable_path = path_to_chromedriver)
