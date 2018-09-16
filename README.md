@@ -1,15 +1,15 @@
 # 1.getpastRainfallData
 Python script that visits IMD website and downloads hourly station rainfall data as
 state wise csv files. Overcomes limitations of the 'getRainfallData' script mentioned below.
-Note: script does not have automated error handling hence running into an error may
-require you to restart the script manually.
+Note: script has basic automated error handling, however you should check the final count of files
+to see if any did not download correctly
 
 ## Libraries needed
-Beautiful Soup, pandas, datetime, time, random, requests, config
+Beautiful Soup, pandas, datetime, time, requests, config (config is a custom py file for path/to/data/folder)
 
 ## Variables to be changed
-- 'station' (Line 11)
-- 'dateStart' and 'dateEnd' (Lines 21 and 22) 
+- 'station' (Line 32)
+- 'dateStart' and 'dateEnd' (Lines 41 and 42) 
 Caution: this script is designed to download at most one month at a time to preserve the file naming
 conventions. Hence 'dateStart' and 'dateEnd' should be the first and last dates of the month for 
 which data is desired.
@@ -36,7 +36,7 @@ ARG - Automatic Rain Gauge stations(1351 stations)
 AGRO - Agro stations (128 stations)
 
 # Data
-Data downloaded using these scripts can be found at this dropbox [link](https://www.dropbox.com/sh/b9q0fo5rtuv0e8a/AABL5FvzCb-I-JiSzdiP0zXOa?dl=0)
+Data downloaded using these scripts can be found at this dropbox [link](https://craigdsouza.github.io/data/IMD-Hourly-Precipitation-Data)
 
 
 Looking for help from volunteers who can run the script for past years and upload to the shared folder.
